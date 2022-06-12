@@ -1,0 +1,21 @@
+.table{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    background: rgb(0, 10, 44);
+    .tableWraper{
+        display: grid;
+        padding: 50px 100px;
+        color: white;
+        text-transform: capitalize;
+        table{
+            margin-top: 50px;
+            width: 100%;
+            border: 1px solid white;
+            th,td{
+                border: 1px solid white;
+                padding: 10px;
+            }
+        }
+    }
+}

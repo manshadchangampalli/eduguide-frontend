@@ -1,0 +1,370 @@
+[
+    {
+        "id":1,
+        "url":"/service/webdevelopment",
+        "hero":{
+            "heading":"WEB DEVELOPMENT",
+            "service":true,
+            "isPara":{
+                "Status":false,
+                "text":""
+            },
+            "isButton":{
+                "Status":false,
+                "text":""  
+            },
+            "bgText":{
+                "Status":true,
+                "text":"WEB DEVELOPMENT"
+            }
+
+        },
+        "explain":{
+            "heading":"briefly explained",
+            "description":"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is"
+        },
+        "features":{
+            "heading":"Features",
+            "features":[
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                }
+
+            ]
+        }
+    },
+    {
+        "id":2,
+        "url":"/service/appdevelopment",
+        "hero":{
+            "heading":"APP DEVELOPMENT",
+            "service":true,
+            "isPara":{
+                "Status":false,
+                "text":""
+            },
+            "isButton":{
+                "Status":false,
+                "text":""  
+            },
+            "bgText":{
+                "Status":true,
+                "text":"APP DEVELOPMENT"
+            }
+
+        },
+        "explain":{
+            "heading":"briefly explained",
+            "description":"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is"
+        },
+        "features":{
+            "heading":"Features",
+            "features":[
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                }
+
+            ]
+        }
+    },
+    {
+        "id":3,
+        "url":"/service/automatebussinessprocess",
+        "hero":{
+            "heading":"AUTOMATE BUSSINESS",
+            "service":true,
+            "isPara":{
+                "Status":false,
+                "text":""
+            },
+            "isButton":{
+                "Status":false,
+                "text":""  
+            },
+            "bgText":{
+                "Status":true,
+                "text":"AUTOMATE BUSSINESS PROCESS"
+            }
+
+        },
+        "explain":{
+            "heading":"briefly explained",
+            "description":"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is"
+        },
+        "features":{
+            "heading":"Features",
+            "features":[
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                }
+
+            ]
+        }
+    },
+    {
+        "id":4,
+        "url":"/service/ecommercesolution",
+        "hero":{
+            "heading":"ECOMMERCE SOLUTION",
+            "service":true,
+            "isPara":{
+                "Status":false,
+                "text":""
+            },
+            "isButton":{
+                "Status":false,
+                "text":""  
+            },
+            "bgText":{
+                "Status":true,
+                "text":"ECOMMERCE SOLUTION"
+            }
+
+        },
+        "explain":{
+            "heading":"briefly explained",
+            "description":"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is"
+        },
+        "features":{
+            "heading":"Features",
+            "features":[
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                }
+
+            ]
+        }
+    },
+    {
+        "id":5,
+        "url":"/service/hiredeveloperseteam",
+        "hero":{
+            "heading":"HIRE DEVELOPERS",
+            "service":true,
+            "isPara":{
+                "Status":false,
+                "text":""
+            },
+            "isButton":{
+                "Status":false,
+                "text":""  
+            },
+            "bgText":{
+                "Status":true,
+                "text":"HIRE DEVELOPERS TEAM"
+            }
+
+        },
+        "explain":{
+            "heading":"briefly explained",
+            "description":"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is"
+        },
+        "features":{
+            "heading":"Features",
+            "features":[
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                }
+
+            ]
+        }
+    },
+    {
+        "id":6,
+        "url":"/service/seoservices",
+        "hero":{
+            "heading":" SEO  SERVICES ",
+            "service":true,
+            "isPara":{
+                "Status":false,
+                "text":""
+            },
+            "isButton":{
+                "Status":false,
+                "text":""  
+            },
+            "bgText":{
+                "Status":true,
+                "text":"SEO SERVICES"
+            }
+
+        },
+        "explain":{
+            "heading":"briefly explained",
+            "description":"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is"
+        },
+        "features":{
+            "heading":"Features",
+            "features":[
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                }
+
+            ]
+        }
+    },
+    {
+        "id":7,
+        "url":"/service/enterprisesoftware",
+        "hero":{
+            "heading":"SOFTWARE DEVELOPMENT",
+            "service":true,
+            "isPara":{
+                "Status":false,
+                "text":""
+            },
+            "isButton":{
+                "Status":false,
+                "text":""  
+            },
+            "bgText":{
+                "Status":true,
+                "text":"ENTERPRISE SOFTWARE DEVELOPMENT"
+            }
+
+        },
+        "explain":{
+            "heading":"briefly explained",
+            "description":"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is"
+        },
+        "features":{
+            "heading":"Features",
+            "features":[
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                }
+
+            ]
+        }
+    },
+    {
+        "id":8,
+        "url":"/service/uiuxdesign",
+        "hero":{
+            "heading":"UI/UX DESIGN",
+            "service":true,
+            "isPara":{
+                "Status":false,
+                "text":""
+            },
+            "isButton":{
+                "Status":false,
+                "text":""  
+            },
+            "bgText":{
+                "Status":true,
+                "text":"UI/UX DESIGN"
+            }
+
+        },
+        "explain":{
+            "heading":"briefly explained",
+            "description":"In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is"
+        },
+        "features":{
+            "heading":"Features",
+            "features":[
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                },
+                {
+                    "item":"commonly used to demonstrate the visual formtypeface "
+                },
+                {
+                    "item":"In publishing and graphic design, Lorem"
+                }
+
+            ]
+        }
+    }
+]

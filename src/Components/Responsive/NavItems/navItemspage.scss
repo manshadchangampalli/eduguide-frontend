@@ -1,0 +1,52 @@
+@import '../../../Style/variable';
+
+
+
+    .responsive-navItems{
+        position: fixed;
+        width: 100vw;
+        height: 120vw;
+        min-height: 100vh;
+        top: 0;
+        left: 0;
+        align-items: start;
+        justify-items: start;
+        padding: 25% 10%;
+        overflow: hidden;
+        z-index: 99999;
+        display: none;
+        background: $whiteColor;
+        .res-nav-wraper{
+           width: auto;
+           display: grid;
+           grid-gap: 20px;
+           grid-template-columns: 1fr;
+           li{
+               a{
+                   text-decoration: none;
+                   color: $blackColor;
+                   font-size: 24px;
+               }
+           }
+           span{
+               font-size: 22px;
+               display: grid;
+               grid-template-columns: 1fr;
+               p{
+                   color: $blackColor;
+               }
+               .drpdwn{
+                   margin-left: 20px;
+                   width: auto;
+                   height: auto;
+                   display: none;
+                   font-size: 15px;
+                   li{
+                       a{
+                           font-size: 18px;
+                       }
+                   }
+               }
+           }
+        }
+    }

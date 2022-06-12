@@ -1,0 +1,31 @@
+// main css file 
+
+// imported the variable file 
+@import '_variable.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: none;
+}
+html.clicked{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    background: $secondary-background;
+    font-family: $font-roboto;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none
+}

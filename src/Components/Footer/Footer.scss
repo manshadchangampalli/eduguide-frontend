@@ -1,0 +1,59 @@
+@import '../../Style/variable';
+
+
+footer{
+    width: 100vw;
+    margin-top: 50px;
+    height: auto;
+    grid-gap: 20px;
+    background: $main-background;
+    color: $whiteColor;
+    padding: 30px 100px 20px 100px;
+    @media only screen and(min-width:1400px) {
+        padding-left: calc((100vw - 1200px) / 2);
+        padding-right: calc((100vw - 1200px) / 2);
+    }
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    .header-sec{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1.5fr;
+        .footer-section{
+            display: flex;
+            justify-self: center;
+            align-content: center;
+            font-weight: 400;
+            gap: 5px;
+            flex-direction: column;
+            h1{
+                margin-bottom: 25px;
+                font-weight: bold;
+                font-size: 18px;
+
+            }
+        }
+        .footer-section-last{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-self: center;
+            h1{
+                margin-bottom: 25px;
+                font-size: 18px;
+            }
+            a{
+                color: white;            
+            }
+            .social-md-icons{
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+    .copyright-sec{
+        display: grid;
+        font-weight: 300;
+        font-size: 16px;
+        place-items: center;
+    }
+}

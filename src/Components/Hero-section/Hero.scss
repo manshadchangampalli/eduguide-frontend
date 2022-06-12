@@ -1,0 +1,91 @@
+@import "../../Style/variable";
+
+.hero {
+  width: 100vw;
+  position: relative;
+  height: 100vh;
+  color: $whiteColor;
+  overflow: hidden;
+  background: $main-background;
+  display: grid;
+  grid-template-rows: 80px auto;
+  /*if the width > 1400 the padding will increase by the (100vw - 1200px) / 2 ratio */
+
+  .main-section {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 100px 0 100px;
+    overflow: hidden;
+    @media only screen and(min-width:1400px) {
+      padding-left: calc((100vw - 1200px) / 2);
+      padding-right: calc((100vw - 1200px) / 2);
+    }
+    @media only screen and(min-height:768px) {
+      padding-top: calc((100vh - 760px) / 2);
+      padding-bottom: calc((100vh - 760px) / 2);
+    }
+    .left-section {
+      display: grid;
+      z-index: 2;
+      align-self: center;
+      height: auto;
+      padding-bottom: 40px;
+      grid-gap: 20px;
+      grid-template-columns: 1fr;
+      h1 {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: $font-exo2;
+        align-self: center;
+        max-width: 500px;
+      }
+      p {
+        font-size: 22px;
+        font-weight: 300;
+      }
+      .get-start-btn {
+        width: 180px;
+        display: grid;
+        place-items: center;
+        height: 60px;
+        color: $blackColor;
+        transition: all 0.5s ease;
+        font-size: 22px;
+        cursor: pointer;
+        background: $whiteColor;
+        border-radius: 8px;
+        box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.5);
+        &:hover {
+          border: 1px rgb(106, 255, 255) solid;
+          color: rgb(4, 102, 102);
+        }
+        &:active {
+          font-size: 20px;
+        }
+      }
+    }
+    .right-section {
+      display: grid;
+      z-index: 2;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 500px;
+        max-height: 80%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes bg {
+  0% {
+    display: block;
+    transform: translateX(0);
+  }
+  100% {
+    display: block;
+    transform: translateX(-100%);
+  }
+}

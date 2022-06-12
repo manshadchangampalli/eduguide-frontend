@@ -1,0 +1,52 @@
+@import '../../Style/variable';
+
+
+.choose-us{
+    width: 100vw;
+    height: auto;
+    background: $secondary-background;
+    padding: 50px 150px 100px 150px;
+    @media only screen and(min-width:1400px) {
+        padding-left:calc((100vw - 1000px )/2) ;
+        padding-right:calc((100vw - 1000px )/2) ;
+    }
+    .choose-us-wraper{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-gap: 70px;
+        place-items: center;
+        grid-template-rows: 60px 1fr;
+        h1{
+            font-size: 40px;
+            color: $blackColor;
+            font-family: $font-exo2;
+            font-weight: bold;
+        }
+        .card-container{
+            width: 100%;
+            padding: 30px 20px;
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            height: 200px;
+            background: $secondary-background;
+            box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.25), -7px -7px 20px #FFFFFF;
+            border-radius: 15px;
+            .chos-us-card{
+                width: 100%;
+                display: grid;
+                place-items: center;
+                grid-template-rows: auto auto;
+                height: 100%;
+                img{
+                    width: 70px;
+                    height: 70px;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

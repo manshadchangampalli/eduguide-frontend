@@ -1,0 +1,38 @@
+@import '../../Style/variable';
+
+
+    .m-scroll__title {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100vw;
+      overflow: hidden;
+      height: 100vh;
+      white-space: nowrap;
+      transform: scale(2);
+      transition: all 1s ease;
+      & > div {
+        display: flex;
+        animation: scrollText 20s infinite linear;
+      }
+      h1 {
+        margin: 0;
+        font-size: 140px;
+        font-family: $font-exo2;
+        color: rgba(255, 255, 255, 0.13);
+        transition: all 2s ease;
+        }
+        
+    }
+  
+  
+  /*div:hover {
+    animation-play-state: paused;
+  }*/
+  @keyframes scrollText {
+    from   { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+  }

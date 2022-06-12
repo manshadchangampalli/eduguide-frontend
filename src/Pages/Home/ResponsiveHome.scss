@@ -1,0 +1,507 @@
+@import '../../Style/variable';
+
+
+
+
+/*responsive design*/
+@media only screen and (max-width:1290px) {
+    .hero .main-section .right-section img{
+        width: 100%;
+    }
+    /*connect*/
+    .connect{
+        padding: 50px 150px;
+        .connect-wraper .left-section .headings h1{
+            font-size: 40px;
+        }
+        .connect-wraper .left-section .headings p{
+            font-size: 16px;
+        }
+    }
+    /*choose-us*/
+    .choose-us{
+        padding: 50px 100px 100px 100px;
+    }
+}
+
+@media only screen and(max-width:1024px) {
+
+    /*responsive at hero section */
+
+    .hero nav .nav-items p{
+        font-size: 18px;
+    }
+    .hero nav .nav-items .contact-btn {
+        font-size: 18px;
+        height: 45px;
+        width: 130px;
+    }
+    .hero .main-section .left-section h1{
+        font-size: 40px;
+    }
+    .hero .main-section .left-section p {
+        font-size: 18px;
+    }
+
+
+    /* for service section*/
+    .services .main-section {
+        grid-template-rows: 1fr auto;
+    }
+    /*connect section*/
+    .connect{
+        padding: 50px 75px;
+        .connect-wraper .left-section .headings h1{
+            font-size: 40px;
+        }
+
+    }
+    
+}
+@media only screen and(max-width:960px) {
+    .services{
+        padding: 50px 20px;
+    }
+    .services .main-section .cd-wp {
+        grid-gap: 40px;
+    }
+    /*connect section*/
+    .connect{
+        padding: 50px 100px;
+        .connect-wraper{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr;
+            grid-gap: 10px;
+            .left-section{
+                grid-row-start: 2;                
+            }
+
+        }
+ 
+    }
+    .connect .connect-wraper .left-section .contents li {
+        font-size: 22px;
+    }
+    .connect .connect-wraper .left-section .headings p {
+        font-size: 22px;
+    }
+    .connect .connect-wraper .left-section .headings h1{
+        font-size: 55px;
+    }
+    /*choose-us*/
+    .choose-us {
+        padding: 50px 30px 100px 30px;
+    }    
+    /*contact*/
+    .contact-form{
+
+        padding: 20px 30px;
+    }
+    }
+
+
+@media only screen and(max-width:768px) {
+    .responsive-navIcon{
+        display: grid;
+    }
+    .hero{
+        height: auto;
+        padding: 50px;
+        grid-template-rows: 1fr;
+
+    }
+    .hero nav{
+        // opacity: 0;
+        display: none;
+    }
+    .hero .responsive-navIcon{
+        display: grid;
+    }
+    .hero nav .nav-items {
+        display: none;
+    }.hero .main-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .hero .main-section .right-section{
+        grid-row-start: 1;
+    }
+
+    /*service section*/
+    .services{
+        padding: 30px;
+    }
+
+    .services .main-section .cd-wp{
+        grid-template-columns: 1fr 1fr !important;
+    }
+    /*connect section*/
+    .connect{
+        padding: 50px;
+    }
+    .connect .connect-wraper .left-section .contents li {
+        font-size: 20px;
+    }
+    .connect .connect-wraper .left-section .headings p {
+        font-size: 20px;
+    }
+    .connect .connect-wraper .left-section .headings h1{
+        font-size: 50px;
+    }
+    /*choose us*/
+    .choose-us{
+        height: auto;
+    }
+    .choose-us .choose-us-wraper .card-container{
+        display: grid;
+        row-gap: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "one one two two  three three"
+                             "four four four  five five five ";
+        height: auto;
+
+        .chos-us-card-1{
+            grid-area: one;
+        }
+        .chos-us-card-2{
+            grid-area: two;
+        }
+        .chos-us-card-3{
+            grid-area: three;
+        }
+        .chos-us-card-4{
+            grid-area: four;
+        }
+        .chos-us-card-5{
+            grid-area: five;
+        }
+    }
+    /*faq*/
+    .faq{
+        padding: 50px 50px;
+    }
+    .faq .heading h1{
+        font-size: 35px;
+    }
+    .faq .faq-main-section .questions  {
+        .head-section{
+            h1{
+                font-size: 18px;
+            }
+        }
+        .answer-section p {
+            font-size: 16px;
+        }
+    }
+    /*contact-form*/
+    .heading{
+        font-size: 20px;
+    }
+    .contact-form {
+        .contact-form-wraper .main-container {
+        grid-template-rows: 2fr 1.1fr 3fr 1fr .8fr;
+    }
+    .contact-form-wraper .main-container .main-details{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        grid-template-areas:"name phone"
+                            "email email";
+        .name{
+            grid-area: name;
+        }
+        .email{
+            grid-area: email;
+            width: 95%;
+        }
+        .phone{
+            grid-area: phone;
+        }
+    }
+    .contact-form-wraper .main-container .which-service {
+        grid-template-rows: 1fr 2fr 2fr;
+        .services1{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+}
+    /*footer*/
+    footer{
+        padding: 30px;
+    }
+
+    
+}
+
+
+@media only screen and(max-width:576px){
+    /*SERVICE SECTION*/
+    .services .main-section .cd-wp{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .services .main-section .cd-wp a .cards{
+        border-radius: 35px;
+    }
+     /*connect section*/
+     .connect{
+        padding: 50px 30px;
+    }
+    .connect .connect-wraper .left-section .contents li {
+        font-size: 16px;
+    }
+    .connect .connect-wraper .left-section .headings p {
+        font-size: 16px;
+    }
+    .connect .connect-wraper .left-section .headings h1{
+        font-size: 30px;
+    }
+    /*choose us*/
+    .choose-us {
+        padding: 50px 30px 50px 30px;
+    }
+    .choose-us .choose-us-wraper h1{
+        font-size: 30px;
+    }
+    .choose-us .choose-us-wraper .card-container{
+        display: grid;
+        row-gap: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "one one two two "
+                             "three three four four"
+                             "five five five five ";
+    }
+    /*faq*/
+    .faq{
+        padding: 50px 20px;
+    }
+    .faq .heading h1{
+        font-size: 25px;
+    }
+    .faq .faq-main-section .questions  {
+        .head-section{
+            h1{
+                font-size: 16px;
+            }
+        }
+        .answer-section p {
+            font-size: 14px;
+        }
+    }
+    /*contact*/
+    .contact-form{
+        padding: 30px 0;
+    
+    .contact-form-wraper .main-container .strt-time h3{
+        font-size: 16px;
+    }
+    .contact-form-wraper .main-container .which-service h3 {
+        font-size: 16px;
+    }
+    .contact-form-wraper .main-container .strt-time .inputs{
+        grid-template-columns: 25px auto;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    .contact-form-wraper .main-container .strt-time .inputs span {
+        font-size: 14px;
+    }
+    .contact-form-wraper .main-container {
+        width: 100%;
+        grid-template-rows: 2fr .7fr 2.8fr 1fr .5fr;
+    }
+    .contact-form-wraper .main-container .strt-time .inputs .radio2 {
+        margin: 0;
+    }
+    .contact-form-wraper .main-container .which-service .services1 {
+        font-size: 11px;
+    }
+    .contact-form-wraper .main-container .strt-time .inputs span{
+        font-size: 11px;
+    }
+    .contact-form-wraper .main-container .requirments {
+        max-width: 95vw;
+        textarea{
+            font-size: 10px;
+        }
+        h3{
+        font-size: 16px;
+            span{
+                font-size: 12px;
+            }
+        }
+    }
+    .contact-form-wraper .main-container .main-details{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "name "
+            "email"
+            "phone";
+            .email,.phone,.name{
+                width: 100%;
+            }
+    }
+    }
+    /*footer*/
+    footer{
+        grid-gap: 30px;
+    }
+    footer .header-sec{
+        grid-template-columns: 1fr 1.2fr;
+        grid-gap: 30px;
+
+    }
+    footer .copyright-sec{
+        font-size: 12px;
+    }
+}
+@media only screen and(max-width:380px){
+    /*hero*/
+    .hero{
+        padding: 10px;
+    }
+    .hero .main-section {
+        grid-template-rows: 1fr auto;
+    }
+    .hero .main-section .left-section{
+        width: calc(100vw - 20px);
+        grid-template-rows: 200px 100px 100px;
+    }
+    .hero .main-section .left-section h1{
+        font-size: 27px;
+        line-height: 35px;
+    }
+    .hero .main-section .left-section .get-start-btn {
+        width: 150px;
+        height: 50px;
+    }
+    /*service*/
+    .services{
+        padding: 10px;
+        grid-gap: 25px;
+        grid-template-rows: 50px auto;
+    }
+    .services .main-section .cd-wp a .cards{
+        width: 130px;
+    }
+    .services .heading-wraper h1{
+        font-size: 30px;
+    }
+    .services .heading-wraper .underline {
+        width: 79px;
+        height: 17px;
+    }
+    .services .heading-wraper {
+        height: 28px;
+    }
+    .services .main-section .cd-wp{
+        grid-gap: 30px !important;
+    }
+    /*connect section*/
+    .connect{
+        padding: 50px 10px;
+    }
+    .connect .connect-wraper .left-section .contents li {
+        font-size: 13px;
+    }
+    .connect .connect-wraper .left-section .headings p {
+        font-size: 13px;
+    }
+    .connect .connect-wraper .left-section .headings h1{
+        font-size: 24px;
+    }
+    /*choose us*/
+    .choose-us {
+        padding: 50px 10px 50px 10px;
+    }
+    /*faq*/
+    .faq{
+        padding: 50px 10px;
+    }
+    .faq .heading h1{
+        font-size: 20px;
+    }
+    .faq .faq-main-section .questions  {
+        padding: 15px;
+        .head-section{
+            h1{
+                font-size: 14px;
+            }
+            svg{
+                width: 7%;
+            }
+        }
+        .answer-section p {
+            font-size: 12px;
+        }
+    }
+    /*contact*/
+    .contact-form .contact-form-wraper .main-container .strt-time h3{
+        font-size: 16px;
+    }
+    .contact-form .contact-form-wraper .main-container .which-service .services1 {
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+    }
+    .contact-form .contact-form-wraper .main-container .main-details{
+        grid-template-columns: 100%;
+        max-width: 95vw;    
+    }
+    /*footer*/
+    footer{
+        padding: 30px 10px;
+    }
+}
+
+@media only screen and (max-width:300px){
+    /*service secition*/
+    .services .main-section .cd-wp {
+        grid-template-columns: 1fr;
+    }
+    .services .heading-wraper {
+        width: 100%;
+    }
+    /*choose us*/
+    .choose-us .choose-us-wraper h1{
+        font-size: 22px;
+    }
+    /*contact*/
+    .contact-form-wraper .heading h1{
+        font-size: 32px;
+    }
+    .contact-form-wraper .main-container .strt-time h3 ,
+    .contact-form-wraper .main-container .which-service h3 ,
+    .contact-form-wraper .main-container .requirments h3{
+        font-size: 14px;
+    }
+    .contact-form-wraper .main-container .which-service .services1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    /*footer*/
+    footer{
+        padding: 30px 10px;
+    }
+    footer .header-sec .footer-section{
+        h1{
+            font-size: 14px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    footer .header-sec .footer-section-last {
+        h1{
+            font-size: 14px;
+        }
+        p,a{
+            font-size: 12px;
+        }
+        
+        img{
+            width: 25px;
+        }
+    }
+}

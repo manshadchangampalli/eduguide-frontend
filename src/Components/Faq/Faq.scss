@@ -1,0 +1,77 @@
+@import '../../Style/variable';
+
+.faq{
+    width: 100vw;
+    height: auto;
+    background: $secondary-background;
+    padding: 50px 100px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-rows: 100px auto;
+    .heading{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        h1{
+            font-size: 45px;
+            font-family: $font-exo2;
+            font-weight: bold;
+        }
+    }
+    .faq-main-section{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-gap: 25px;
+        // grid-template-rows: repeat(7,1fr);
+        grid-template-columns:1fr;
+        .activeQuestion.questions{
+            .answer-section{
+                display: block !important;
+                transition: all .5s ease ;
+
+            }
+        }
+        .questions{
+            max-width: 900px;
+            transition: all .5s ease ;
+            height: auto;
+            width: 100%;
+            cursor: pointer;
+            background: $secondary-background;
+            box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.25), -7px -7px 20px #FFFFFF;
+            border-radius: 15px;
+            padding: 20px 35px;
+            display: grid;
+            justify-self: center;
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+            .head-section{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                svg{
+                    cursor: pointer;
+                    transition: transform .5s ease;
+                }
+            }
+            .answer-section{
+                display: none;
+                transition: all .5s ease ;
+                width: 100%;
+                height: auto;
+                p{
+                    font-family: $font-roboto;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    color: rgba(0, 0, 0, 0.678);
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@import '../../Style/variable';
+
+@media only screen and(max-width:1024px) {
+    // map
+    .map{
+        padding: 50px;
+    }
+}
+
+@media only screen and(max-width:960px) {
+    // map
+    .map{
+        padding:40px 20px;
+    }
+    .map .box{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .map .box .box-map-sec{
+        grid-row-start: 4;
+    }
+
+}
+@media only screen and(max-width:768px){
+    .contact .contact-form .all-contact-form-container .form-2-requestACallback .contact-form-wraper .main-container .main-details{
+        grid-template-areas:
+        "name name"
+        "email email"
+        "phone phone";
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr ;
+
+    }
+    .contact .contact-form .all-contact-form-container .form-2-requestACallback .contact-form-wraper .main-container .time-slot{
+        place-content: center;
+    }
+    .contact .contact-form .all-contact-form-container .form-2-requestACallback .contact-form-wraper .main-container .time-slot .main-details2{
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr ;
+    }
+
+
+    // FORM 3 --------------------------
+     
+    .contact .contact-form .all-contact-form-container .form-3-requestAQuote .contact-form-wraper .main-container .main-details{
+        grid-template-areas:
+        "name name"
+        "email email"
+        "phone phone";
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr ;
+
+    }
+
+
+    .contact .contact-form .all-contact-form-container .form-3-requestAQuotes .contact-form-wraper .main-container{
+        grid-template-rows: auto;
+    }
+    .contact .contact-form .all-contact-form-container .form-3-requestAQuotes .contact-form-wraper .main-container .main-details-1 {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        grid-gap: 30px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+    }
+    .contact .contact-form .all-contact-form-container .form-3-requestAQuotes .contact-form-wraper .main-container .main-details-2 {
+        width: 100%;
+        display: grid;
+        grid-gap: 30px;
+        place-items: center;
+        grid-template-columns: 1fr;
+        input{
+            width: 90%;
+        }
+
+    }
+    // item 4------------------------
+
+    .contact .contact-form .all-contact-form-container .form-4-career .contact-form-wraper .main-container{
+        grid-template-rows: auto;
+        grid-gap: 30px;
+    }
+    .contact .contact-form .all-contact-form-container .form-4-career .contact-form-wraper .main-container .main-details-cnt-career{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+    .contact .contact-form .all-contact-form-container .form-4-career .contact-form-wraper .main-container .main-details-cnt-career-2{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        input{
+            width: 90%;
+        }
+    }
+    .contact .contact-form .all-contact-form-container .form-4-career .contact-form-wraper .main-container .drag-drop-file .custom-file-input {
+        height: 30px;
+    }
+    .contact .contact-form .all-contact-form-container .form-4-career .contact-form-wraper .main-container .drag-drop-file .icons-input-box{
+        grid-gap: 20px;
+    }
+    .contact .contact-form .all-contact-form-container .form-4-career .contact-form-wraper .main-container .drag-drop-file .icon p {
+        display: none;
+    }
+    .contact .contact-form .all-contact-form-container .form-4-career .contact-form-wraper .main-container .drag-drop-file{
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .contact .nav-for-forms {
+        height: 65px;
+    }
+    .contact .nav-for-forms .items {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:380px){
+    .map{
+        padding:40px 10px ;
+    }
+    .map .box .select-sections .select-section .heading-button {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

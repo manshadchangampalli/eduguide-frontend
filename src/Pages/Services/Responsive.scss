@@ -1,0 +1,240 @@
+@import '../../Style/variable';
+
+
+@media only screen and(max-width:1024px) {
+    /*HERO*/
+    .hero-section .main-section h1 {
+        font-size: 70px;
+    }
+    /*features*/
+    .features{
+        padding: 50px 150px;
+        &-box{
+            li{
+                font-size: 22px;
+            }
+        }
+    }
+    
+    
+}
+@media only screen and(max-width:960px) {
+    /*HERO*/
+    .hero-section .main-section h1 {
+        font-size: 45px;
+    }
+    /*features*/
+    .features{
+        padding: 50px 150px;
+        &-box{
+            li{
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+@media only screen and(max-width:768px) {
+    /*hero*/
+    .hero-section .responsive-navIcon{
+        display: grid;
+    }
+    .hero-section{
+        padding: 50px;
+    }
+    .hero-section nav {
+        display: none;
+    }
+    .hero-section .main-section h1 {
+        font-size: 40px;
+    }
+    .hero .main-section .right-section img {
+        width: 100%;
+        min-height: 100%;
+    }
+    .hero .main-section {
+        padding-top: 40px;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        grid-template-rows: 1fr auto;
+    }
+    /*explain*/
+    .explain{
+        padding: 150px 50px;
+    }
+    /*features*/
+    .features{
+        padding: 50px 50px;
+        &-box{
+            li{
+                font-size: 18px;
+            }
+        }
+    }
+    
+    /*faq*/
+    .faq{
+        padding: 50px 50px;
+    }
+    .faq .heading h1{
+        font-size: 35px;
+    }
+    .faq .faq-main-section .questions  {
+        .head-section{
+            h1{
+                font-size: 18px;
+            }
+        }
+        .answer-section p {
+            font-size: 16px;
+        }
+    }
+    
+    /*footer*/
+    footer{
+        padding: 30px;
+    }
+
+    
+}
+
+
+@media only screen and(max-width:576px){
+     /*hero*/
+     .hero-section{
+        height: auto;
+        padding:50px 30px;
+    }
+    .hero-section .main-section h1 {
+        font-size: 30px;
+    }
+    /*explain*/
+    .explain{
+        padding: 100px 30px;
+        &-box {
+            grid-gap: 15px;
+            padding: 20px;
+            p{
+                font-size: 18px;
+                line-height: 31px;
+                letter-spacing: 0.02em;
+            }
+            h1{
+                font-size: 30px;
+            }
+            }
+    }
+    /*features*/
+    .features{
+        padding: 50px 20px;
+        &-box{
+            li{
+                font-size: 16px;
+            }
+        }
+    }
+    /*faq*/
+    .faq{
+        padding: 50px 20px;
+    }
+    .faq .heading h1{
+        font-size: 25px;
+    }
+    .faq .faq-main-section .questions  {
+        .head-section{
+            h1{
+                font-size: 16px;
+            }
+        }
+        .answer-section p {
+            font-size: 14px;
+        }
+    }
+    
+    /*footer*/
+    footer{
+        grid-gap: 30px;
+    }
+    footer .header-sec{
+        grid-template-columns: 1fr 1.2fr;
+        grid-gap: 30px;
+
+    }
+    footer .copyright-sec{
+        font-size: 12px;
+    }
+}
+@media only screen and(max-width:380px){
+    /*hero*/
+    .hero-section{
+        .main-section h1 {
+            font-size: 22px;
+        }
+    }
+    .hero .main-section .left-section {
+        width: calc(100vw - 20px);
+        grid-template-rows: auto;
+    }
+    /*explain*/
+    .explain{
+        padding: 30px 10px;
+    }
+    .explain-box h1 {
+        font-size: 22px;
+    }
+    /*faq*/
+    .faq{
+        padding: 50px 10px;
+    }
+    .faq .heading h1{
+        font-size: 20px;
+    }
+    .faq .faq-main-section .questions  {
+        padding: 15px;
+        .head-section{
+            h1{
+                font-size: 14px;
+            }
+            svg{
+                width: 7%;
+            }
+        }
+        .answer-section p {
+            font-size: 12px;
+        }
+    }
+    
+    /*footer*/
+    footer{
+        padding: 30px 10px;
+    }
+}
+
+@media only screen and (max-width:300px){
+    
+    
+    /*footer*/
+    footer{
+        padding: 30px 10px;
+    }
+    footer .header-sec .footer-section{
+        h1{
+            font-size: 14px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    footer .header-sec .footer-section-last {
+        h1{
+            font-size: 14px;
+        }
+        p,a{
+            font-size: 12px;
+        }
+        
+        img{
+            width: 25px;
+        }
+    }
+}

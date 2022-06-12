@@ -1,0 +1,33 @@
+@import '../../Style/variable';
+
+.features{
+    width: 100vw;
+    height: auto;
+    background: $main-background;
+    padding: 50px 200px;
+    @media only screen and(min-width:1400px) {
+        padding-left: calc((100vw - 1200px) / 2);
+        padding-right: calc((100vw - 1200px) / 2);
+    }
+    &-box{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        h1{
+            text-transform: capitalize;
+            font-family: $font-exo2;
+            font-size: 45px;
+            color: $whiteColor;
+            margin-bottom: 25px;
+        }
+        li{
+            padding-left: 10px;
+            list-style: decimal;
+            font-size: 24px;
+            color: $whiteColor;
+            font-weight: 300;
+        }
+    }
+}

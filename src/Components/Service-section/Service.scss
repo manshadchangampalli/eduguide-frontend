@@ -1,0 +1,92 @@
+@import '../../Style/variable';
+
+.services{
+    width: 100vw;
+    height: auto;
+    background: $secondary-background;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-rows: 150px auto;
+    padding: 50px 100px 100px 100px;
+    @media only screen and (max-width:1400px) {
+        padding-left:calc((100vw - 1200px )/2) ;
+        padding-right:calc((100vw - 1200px )/2) ;
+    }
+    .heading{
+        display: grid;
+        place-items: center;
+        &-wraper{
+            width: 300px;
+            position: relative;
+            height: 50px;
+            h1{
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                top: 50%;
+                font-size: 50px;
+                font-family: $font-exo2;
+                color: $blackColor;
+                z-index: 2;
+            }
+            img{
+                z-index: 1;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-10%,60%);
+                width: 120px;
+                height: 30px;
+            }
+        }
+    }
+    .main-section{
+        display: grid;
+        grid-row-gap: 100px;
+        place-items: center;
+            .cd-wp{
+                display: grid;
+                grid-gap: 20px;
+                grid-row-gap: 20px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                a{
+                    text-decoration: none;
+                    .cards{
+                        width: 200px;
+                        height: 230px;
+                        place-items: center;
+                        background: linear-gradient(149.53deg, #F1F1F1 0%, #E2E2E2 100%);
+                        box-shadow: -10px -10px 21px #FFFFFF, 10px 10px 21px rgba(76, 126, 90, 0.25), inset 4px 4px 20px rgba(0, 0, 0, 0.01);                      
+                        border-radius: 20px;
+                        grid-template-rows: 1fr .5fr;
+                        display: grid;
+                        &:hover{
+                            box-shadow: -2px -2px 3px $whiteColor, 2px 2px 3px rgba(76, 126, 90, 0.25), inset 4px 4px 20px rgba(0, 0, 0, 0.01);
+                            img{
+                                filter: grayscale(0);
+                            }
+                        }
+                        img{
+                            width: 70px;
+                            height: auto;
+                            margin-left: 20px;
+                            object-fit: cover;
+                            filter: grayscale(100%);
+                        }
+                        h1{
+                            width: 80%;
+                            font-weight: normal;
+                            font-size:12px;
+                            font-family:$font-roboto;
+                            color:$blackColor;
+                            align-self: flex-start;
+                            text-align: center;
+                        }
+                    
+                    }
+                }
+                
+        }
+    }
+        
+}
