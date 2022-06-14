@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Button from '../button/Button'
@@ -20,33 +20,49 @@ const Arrow =()=>{
 
 
 function Navbar() {
+    const [locData,setLocData] = useState({status:false,name:null})
     const scroll = useSelector(state => state.scrollValue)
+    useEffect(() => {
+      if(localStorage.getItem("name")){
+        setLocData({status:true,name:localStorage.getItem("name")})
+      }
+      if(localStorage.getItem("creator")){
+        setLocData({status:true,name:"creator"})
+      }
+    }, [])
+    console.log(locData);
     return (
         <nav>
         <div style={{background:"#000a2c"}} className="nav-wraper">
         {/* logo */}
         <div className="logo">
-            <img src={Logo} alt="" />
+            <h2>EduGuide</h2>
         </div>
         {/* <!-- nav-items  --> */}
         <div className="nav-items">
             <Link  style={{color:"white"}} className="nav-link" to="/"><p>Home</p></Link>
-            <Link  style={{color:"white"}} className="nav-link" to="/"><p>Home</p></Link>
-            <p>Hisham</p>
-            {/* <!-- its include the dropdown also --> */}
-            {/* <li className="nav-link" href="#service"> */}
-                {/* <a  style={{color:"white"}} href="#service"><p>Service <Arrow/> </p></a> */}
-                {/* <Dropdown/> */}
-            {/* </li> */}
-            {/* <a  style={{color:"white"}} className="nav-link" href=""><p>Pricing</p></a>
-            <a  style={{color:"white"}} className="nav-link" href=""><p>Blog</p></a> */}
-            {/* <!-- contact-button  --> */}
+            {
+                localStorage.getItem("creator") &&
+                <Link  style={{color:"white"}} className="nav-link" to="/creator"><p>creator</p></Link>}
+            {locData.status&&<p>{locData.name}</p>}
+            {
+            !locData.status?
             <Link to="/login">
                 <Button
                 className="contact-btn"
-                text="Login"
+                text="login"
                 />
             </Link>
+            :
+                <div
+                onClick={()=>{
+                    localStorage.clear()
+                    window.location.reload()
+                }}
+                >
+                logout
+               </div>
+            }
         </div>
         </div>
     </nav>

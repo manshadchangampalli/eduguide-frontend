@@ -2,12 +2,16 @@ import React, { useEffect, useState } from 'react'
 import './Types.scss'
 import Navbar from '../../Components/Navbar/Navbar'
 import Card from '../../Components/Service-section/card'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const TypesEdu = () => {
     const [type, setType] = useState("")
     const route = useLocation()
+    const nav = useNavigate()
     useEffect(() => {
+        if(!localStorage.getItem("name")){
+            nav("/login");
+        }
         console.log(route);
         if (route.pathname === "/after12th") {
             setType("After 12th")
@@ -38,7 +42,7 @@ const TypesEdu = () => {
                 </Link>
                     </div>
                     <div className="card">
-                <Link to={"jobs"}>
+                <Link to={"job"}>
                         <img src="https://cdn-icons-png.flaticon.com/512/1243/1243560.png" alt="" />
                         <h4>Jobs</h4>
                 </Link>

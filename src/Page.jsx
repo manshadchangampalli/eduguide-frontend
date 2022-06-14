@@ -14,6 +14,10 @@ import ScrollTop from './Components/ScrollTopRouter/ScrollTop'
 import TypesEdu from './Pages/TypesEdu/TypesEdu'
 import Table from './Pages/Table/Table'
 import CreatorPage from './Pages/CreatorPage/CreatorPage'
+import Login from './Pages/signin/Signin'
+import Signup from './Pages/Signup/Signup'
+import Clogin from './Pages/creatorLogin/clogin'
+import ShowAll from './Pages/showAll/ShowAll'
 
 function Page() {
     const [scroll, setScroll] = useState(0)
@@ -35,6 +39,10 @@ function Page() {
                     <Route path="/:type" element={<TypesEdu/>}/>
                     <Route path="/:point/:type" element={<Table/>}/>
                     <Route path="/creator" element={<CreatorPage/>}/>
+                    <Route path="/login" element={<Login/>}/>
+                    <Route path="/signup" element={<Signup/>}/>
+                    <Route path="/cretorshowall" element={<ShowAll />}/>
+                    <Route path="/creatorlogin" element={<Clogin/>}/>
                     <Route path="*" element={<h1>404</h1>}/>
                 </Routes>
             </BrowserRouter>

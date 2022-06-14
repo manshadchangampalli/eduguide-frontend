@@ -36,7 +36,7 @@ function Hero({isPara,isButton,heading,bgText,page}) {
         {/* <!-- main sectin it iclude the heading and the image ha  --> */}
         <div className="main-section">
             <aside className="left-section">
-                <h1 style={style}>{heading}</h1>
+                <h1 style={style}>Welcome Explorers</h1>
                 {isPara.Status?<p>{isPara.text}</p>:""}
                 {isButton.Status?<Button 
                 text={isButton.text}

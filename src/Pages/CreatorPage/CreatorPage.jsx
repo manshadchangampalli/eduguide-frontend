@@ -1,4 +1,5 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import Navbar from '../../Components/Navbar/Navbar'
 import './Creator.scss'
 
@@ -8,7 +9,12 @@ const CreatorPage = () => {
     const type = useRef()
     const date = useRef()
     const link = useRef()
-
+    const nav = useNavigate()
+    useEffect(() => {
+        if (!localStorage.getItem("creator")) {
+            nav("/")
+        }
+    }, [])
     const addData = () => {
         const data = {
             title: title.current.value,
@@ -28,14 +34,15 @@ const CreatorPage = () => {
                 console.log(res);
                 alert("data added successfully")
                 title.current.value = ""
-                qualification.current.value= ""
-                link.current.value= ""
-                date.current.value= ""
-                type.current.value= ""
+                qualification.current.value = ""
+                link.current.value = ""
+                date.current.value = ""
+                type.current.value = ""
             })
             .catch(err => {
                 alert("data added failed" + err)
             })
+        
 
     }
     return (
@@ -78,7 +85,9 @@ const CreatorPage = () => {
                     <button onClick={addData} className="button">Create</button>
                     <button className="button">Discard</button>
                 </div>
+                <Link to={"/cretorshowall"}>Show All</Link>
             </div>
+
         </div>
     )
 }
